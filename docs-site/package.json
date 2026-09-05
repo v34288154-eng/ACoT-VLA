@@ -1,0 +1,17 @@
+{
+  "name": "acot-vla-docs-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ACoT-VLA 官方文档站(DeepWiki 风格,中文单语) - 基于 VitePress + Mermaid",
+  "scripts": {
+    "dev": "vitepress dev docs --port 5173",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs --port 4173"
+  },
+  "devDependencies": {
+    "mermaid": "^11.4.1",
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.13"
+  }
+}
