@@ -10,6 +10,7 @@
     "preview": "vitepress preview docs --port 4173"
   },
   "devDependencies": {
+    "jsdom": "^30.0.1",
     "mermaid": "^11.4.1",
     "vitepress": "^1.6.4",
     "vue": "^3.5.13"
