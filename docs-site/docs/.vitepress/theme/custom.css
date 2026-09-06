@@ -28,3 +28,140 @@
   background: rgba(178, 35, 24, 0.12);
   border-color: rgba(178, 35, 24, 0.4);
 }
+
+/* ---------- 图片查看器（ImageViewer）---------- */
+/* 可点击放大提示 */
+.vp-doc img,
+.mermaid-svg svg {
+  cursor: zoom-in;
+}
+
+.vz-root {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(8, 10, 16, 0.82);
+  backdrop-filter: blur(3px);
+  overscroll-behavior: contain;
+}
+.vz-stage {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  touch-action: none;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.vz-stage.dragging {
+  cursor: grabbing;
+}
+.vz-wrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: fit-content;
+  will-change: transform;
+}
+.vz-wrap .vz-img {
+  display: block;
+  max-width: none;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  background: #fff;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.vz-wrap svg {
+  display: block;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+.vz-toolbar {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px;
+  background: rgba(22, 26, 34, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  z-index: 3;
+}
+.vz-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: #e6e9ef;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.vz-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+.vz-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.vz-percent {
+  width: auto;
+  min-width: 56px;
+  padding: 0 8px;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+.vz-sep {
+  width: 1px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0 2px;
+}
+
+.vz-hint {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(235, 238, 245, 0.72);
+  font-size: 12.5px;
+  background: rgba(22, 26, 34, 0.7);
+  padding: 6px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
+  z-index: 3;
+  pointer-events: none;
+}
+.vz-toast {
+  position: absolute;
+  bottom: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: min(90vw, 560px);
+  color: #fff;
+  font-size: 13.5px;
+  background: rgba(15, 18, 26, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 9px 16px;
+  border-radius: 10px;
+  z-index: 4;
+  text-align: center;
+  word-break: break-all;
+}
