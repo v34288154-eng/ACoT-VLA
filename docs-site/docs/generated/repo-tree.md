@@ -1,12 +1,13 @@
 # 仓库目录快照（自动生成）
 
-> 生成时间：2026-09-05 17:16；基线 commit：`c323377`。
+> 生成时间：2026-09-06 10:38；基线 commit：`592eb4e`。
 > 由 `python tools/scan_repo.py --repo <repo> --commit <sha>` 生成，请勿手改。
 
 ```text
 .
 ├── .github/
 │   └── workflows/
+│       ├── docs.yml   (1.3 KB)
 │       ├── pre-commit.yml   (0.3 KB)
 │       └── test.yml   (0.7 KB)
 ├── docs/
@@ -17,27 +18,34 @@
 ├── docs-site/
 │   ├── docs/
 │   │   ├── generated/
-│   │   ├── appendix.md   (0.4 KB)
-│   │   ├── architecture.md   (3.1 KB)
-│   │   ├── config-center.md   (0.5 KB)
-│   │   ├── data.md   (0.6 KB)
-│   │   ├── deploy-real.md   (0.4 KB)
-│   │   ├── evaluation.md   (0.5 KB)
-│   │   ├── index.md   (2.1 KB)
-│   │   ├── inference.md   (0.5 KB)
-│   │   ├── model-acot.md   (0.7 KB)
-│   │   ├── overview.md   (0.6 KB)
-│   │   ├── quickstart.md   (0.5 KB)
-│   │   └── training.md   (0.5 KB)
+│   │   │   ├── config-registry.md   (4.1 KB)
+│   │   │   ├── module-map.md   (25.2 KB)
+│   │   │   └── repo-tree.md   (8.4 KB)
+│   │   ├── public/
+│   │   │   └── figures/
+│   │   │       └── framework.png   (270.4 KB)
+│   │   ├── appendix.md   (21.2 KB)
+│   │   ├── architecture.md   (15.1 KB)
+│   │   ├── config-center.md   (17.9 KB)
+│   │   ├── data.md   (16.4 KB)
+│   │   ├── deploy-real.md   (15.8 KB)
+│   │   ├── evaluation.md   (11.0 KB)
+│   │   ├── index.md   (3.0 KB)
+│   │   ├── inference.md   (13.4 KB)
+│   │   ├── model-acot.md   (24.8 KB)
+│   │   ├── overview.md   (10.4 KB)
+│   │   ├── quickstart.md   (12.1 KB)
+│   │   └── training.md   (19.7 KB)
 │   ├── tools/
-│   │   ├── check_anchors.py   (4.4 KB)
-│   │   ├── check_mermaid.mjs   (1.5 KB)
+│   │   ├── check_anchors.py   (4.6 KB)
+│   │   ├── check_links.mjs   (2.0 KB)
+│   │   ├── check_mermaid.mjs   (1.9 KB)
 │   │   ├── config_registry.py   (5.2 KB)
 │   │   ├── module_map.py   (3.9 KB)
 │   │   └── scan_repo.py   (2.8 KB)
 │   ├── .gitignore   (0.1 KB)
-│   ├── package-lock.json   (132.0 KB)
-│   └── package.json   (0.4 KB)
+│   ├── package-lock.json   (150.3 KB)
+│   └── package.json   (0.5 KB)
 ├── examples/
 │   ├── aloha_real/
 │   │   ├── compose.yml   (1.5 KB)
@@ -186,6 +194,6 @@
 ├── .python-version   (0.0 KB)
 ├── LICENSE   (11.3 KB)
 ├── pyproject.toml   (3.0 KB)
-├── README.md   (7.5 KB)
+├── README.md   (8.0 KB)
 └── uv.lock   (847.8 KB)
 ```

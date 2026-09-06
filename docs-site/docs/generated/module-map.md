@@ -1,6 +1,6 @@
 # 模块地图（自动生成：类/函数 → 文件:行号）
 
-> 生成时间：2026-09-05 17:16；基线 commit：`c323377`。
+> 生成时间：2026-09-06 10:38；基线 commit：`592eb4e`。
 > 覆盖 ('src/openpi', 'packages', 'scripts', 'examples') 下的公开符号：65 个模块、184 个类、115 个函数/方法。
 > 由 `python tools/module_map.py --repo <repo> --commit <sha>` 生成，请勿手改。
 

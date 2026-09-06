@@ -46,10 +46,13 @@ def resolve(rel: str, root: pathlib.Path) -> tuple[pathlib.Path | None, list[str
     if hits:
         return hits[0], []
     if "/" not in rel:
-        # bare filename fallback: search all scanned roots + repo root
+        # bare filename fallback: search only source roots (never the repo root,
+        # which would recursively scan docs-site/node_modules and time out)
         name_hits: list[pathlib.Path] = []
         for r in ROOTS:
-            base = root / r if r else root
+            if not r:
+                continue
+            base = root / r
             if base.is_dir():
                 for c in base.glob(f"**/{rel}"):
                     if "third_party" not in c.parts and ".git" not in c.parts:

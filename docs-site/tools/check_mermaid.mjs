@@ -30,7 +30,7 @@ function collectMd(dir, acc = []) {
 const files = collectMd(docsDir);
 const diagrams = [];
 for (const f of files) {
-  const text = readFileSync(f, "utf8");
+  const text = readFileSync(f, "utf8").replace(/\r\n/g, "\n"); // tolerate CRLF
   for (const m of text.matchAll(FENCE_RE)) {
     diagrams.push({ file: relative(docsDir, f), code: m[1] });
   }

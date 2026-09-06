@@ -1,6 +1,6 @@
 # 命名配置注册表（自动生成）
 
-> 来源：`src/openpi/training/config.py` 的 `_CONFIGS` 列表；生成时间：2026-09-05 17:16；基线 commit：`c323377`。
+> 来源：`src/openpi/training/config.py` 的 `_CONFIGS` 列表；生成时间：2026-09-06 10:38；基线 commit：`592eb4e`。
 > 统计：共 25 个命名配置（按模型类粗略分类：ACOT×8 · Pi0×17）。运行时以 `get_config(name)` 查询，CLI 经 tyro 覆盖字段。
 > 由 `python tools/config_registry.py --repo <repo> --commit <sha>` 生成，请勿手改。
 
