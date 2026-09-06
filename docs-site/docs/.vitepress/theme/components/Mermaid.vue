@@ -16,7 +16,15 @@ function b64decode(s: string): string {
 onMounted(async () => {
   try {
     const mermaid = (await import("mermaid")).default;
-    mermaid.initialize({ startOnLoad: false, securityLevel: "loose", theme: "default" });
+    mermaid.initialize({
+      startOnLoad: false,
+      securityLevel: "loose",
+      theme: "default",
+      // 方法三：让 mermaid 按容器宽度自动缩放 SVG（不写死像素宽高）
+      flowchart: { useMaxWidth: true, htmlLabels: true },
+      sequence: { useMaxWidth: true },
+      fontSize: 16, // 全局文字基准字号（像素），可整体调大/调小
+    });
     const { svg } = await mermaid.render(uid, b64decode(props.code));
     if (host.value) host.value.innerHTML = svg;
   } catch (e) {
