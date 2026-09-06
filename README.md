@@ -6,7 +6,7 @@
 
 ## 📖 完整文档（Docs Site）
 
-面向使用者与研究者的 **DeepWiki 风格中文文档站**：[ACoT-VLA 文档](https://agibottech.github.io/ACoT-VLA/) —— 总览、快速上手、架构图、数据管线、模型深潜（EAR/IAR）、训练系统、配置中心、推理服务、评测竞赛与真机部署；源码位于仓库 `docs-site/` 子目录（VitePress + Mermaid，所有代码引用可溯源）。
+面向使用者与研究者的 **DeepWiki 风格中文文档站**：[ACoT-VLA 文档](https://v34288154-eng.github.io/ACoT-VLA/) —— 总览、快速上手、架构图、数据管线、模型深潜（EAR/IAR）、训练系统、配置中心、推理服务、评测竞赛与真机部署；源码位于仓库 `docs-site/` 子目录（VitePress + Mermaid，所有代码引用可溯源）。
 
 This is the **official implementation** of [**ACoT-VLA**](https://arxiv.org/abs/2601.11404v2), a novel paradigm designed to bridge the fundamental semantic-kinematic gap in modern robotic policies. By shifting the locus of reasoning from perception to action, ACoT-VLA enables robots to "think" in the language of actions.
 
